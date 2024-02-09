@@ -4,7 +4,7 @@ const api = require('./api')
 const morgan = require('morgan')
 const cors = require('cors');
 
-app.set('port', (process.env.PORT || 8081))
+app.set('port', (process.env.PORT || 8080))
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 app.use(cors())
